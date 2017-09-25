@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://yunzhexu.github.io/"/>
   <updated>2017-09-25T05:04:47.614Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://yunzhexu.github.io/</id>
   
   <author>
     <name>Yunzhe Xu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/09/24/hello-world/"/>
-    <id>http://yoursite.com/2017/09/24/hello-world/</id>
+    <link href="http://yunzhexu.github.io/2017/09/24/hello-world/"/>
+    <id>http://yunzhexu.github.io/2017/09/24/hello-world/</id>
     <published>2017-09-25T01:49:50.963Z</published>
     <updated>2017-09-25T05:04:47.614Z</updated>
     
@@ -35,7 +35,7 @@
     </summary>
     
     
-      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
+      <category term="Testing" scheme="http://yunzhexu.github.io/tags/Testing/"/>
     
   </entry>
   
