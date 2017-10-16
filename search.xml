@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[About Me]]></title>
+    <url>%2F2017%2F10%2F16%2FAbout-Me%2F</url>
+    <content type="text"><![CDATA[About meHi, I’m Yunzhe Xu, a graduate student studying at Stevens Institute of Technology, in the greater New York area. I like programing, learning new technology is my passion. I want to be a web developing superhero and create awesome web applications in the future! What I knowFront-endHTML, CSS, JavascriptBootstrap, React Back-endNodeJS, APIs, MongoDBJava, SQL AppAndroid Development Data AnalysisPython GameUnity What I am learning and want to learn Angular2, Typescript, ES6Vue, React Native, Electron, Swift I am writing some articles about what I learned in my blog. One for summarizing knowledge, another for sharing ideas. By the way, I am actively seeking for an internship or full time job recently. Feel free to contact me. Just send an email to xuyunzhe0607@gmail.com]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2017%2F09%2F24%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>

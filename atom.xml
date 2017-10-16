@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunzhexu.github.io/"/>
-  <updated>2017-09-25T05:04:47.614Z</updated>
+  <updated>2017-10-16T09:37:09.183Z</updated>
   <id>http://yunzhexu.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>About Me</title>
+    <link href="http://yunzhexu.github.io/2017/10/16/About-Me/"/>
+    <id>http://yunzhexu.github.io/2017/10/16/About-Me/</id>
+    <published>2017-10-16T09:13:22.000Z</published>
+    <updated>2017-10-16T09:37:09.183Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="../MyImages/header-image-coding.jpg" alt=""></p><h1 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h1><p>Hi, I’m Yunzhe Xu, a graduate student studying at Stevens Institute of Technology, in the greater New York area.</p><p>I like programing, learning new technology is my passion. I want to be a web developing superhero and create awesome web applications in the future!</p><h2 id="What-I-know"><a href="#What-I-know" class="headerlink" title="What I know"></a>What I know</h2><div class="note primary"><h3 id="Front-end"><a href="#Front-end" class="headerlink" title="Front-end"></a>Front-end</h3><p>HTML, CSS, Javascript<br>Bootstrap, React  </p></div><div class="note info"><h3 id="Back-end"><a href="#Back-end" class="headerlink" title="Back-end"></a>Back-end</h3><p>NodeJS, APIs, MongoDB<br>Java, SQL  </p></div><div class="note success"><h3 id="App"><a href="#App" class="headerlink" title="App"></a>App</h3><p>Android Development  </p></div><div class="note warning"><h3 id="Data-Analysis"><a href="#Data-Analysis" class="headerlink" title="Data Analysis"></a>Data Analysis</h3><p>Python  </p></div><div class="note danger"><h3 id="Game"><a href="#Game" class="headerlink" title="Game"></a>Game</h3><p>Unity  </p></div><h2 id="What-I-am-learning-and-want-to-learn"><a href="#What-I-am-learning-and-want-to-learn" class="headerlink" title="What I am learning and want to learn"></a>What I am learning and want to learn</h2><div class="note default"><p> Angular2, Typescript, ES6<br>Vue, React Native, Electron, Swift  </p></div><p>I am writing some articles about what I learned in my blog. One for summarizing knowledge, another for sharing ideas.</p><p>By the way, I am actively seeking for an internship or full time job recently. Feel free to contact me. Just send an email to xuyunzhe0607@gmail.com</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../MyImages/header-image-coding.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;About-me&quot;&gt;&lt;a href=&quot;#About-me&quot; class=&quot;headerlink&quot; title=&quot;About me&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://yunzhexu.github.io/2017/09/24/hello-world/"/>
     <id>http://yunzhexu.github.io/2017/09/24/hello-world/</id>
-    <published>2017-09-25T01:49:50.963Z</published>
-    <updated>2017-09-25T05:04:47.614Z</updated>
+    <published>2017-09-25T01:49:50.964Z</published>
+    <updated>2017-09-25T05:04:47.615Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><a id="more"></a><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
     
