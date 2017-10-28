@@ -37,4 +37,27 @@
     
   </entry>
   
+  <entry>
+    <title>test</title>
+    <link href="http://yunzhexu.github.io/2017/10/15/test/"/>
+    <id>http://yunzhexu.github.io/2017/10/15/test/</id>
+    <published>2017-10-15T20:05:19.000Z</published>
+    <updated>2017-10-28T20:22:22.628Z</updated>
+    
+    <content type="html"><![CDATA[<iframe width="854" height="480" src="https://www.youtube.com/embed/FM7MFYoylVs" frameborder="0" gesture="media" allowfullscreen></iframe><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="https://open.spotify.com/track/3mtGoEJPXSFO2Lz5pw45ya"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/FM7MFYoylVs&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
