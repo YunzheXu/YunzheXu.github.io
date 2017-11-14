@@ -5,7 +5,8 @@
     <url>%2F2017%2F10%2F13%2FSentiment-Analysis%2F</url>
     <content type="text"><![CDATA[Package NeededIf you don’t have installed the nltk in your python environment, just do this: 1pip install nltk Use 2 packages for the work.12from nltk.corpus import sentiwordnet as swnfrom nltk.corpus import wordnet as wn Get Synsets of A WordYou can get a list of the synsets for any given word by doing this: 123word = 'like'syn = wn.synsets(word)print (syn) The result wil be: 1[Synset('like.n.01'), Synset('like.n.02'), Synset('wish.v.02'), Synset('like.v.02'), Synset('like.v.03'), Synset('like.v.04'), Synset('like.v.05'), Synset('like.a.01'), Synset('like.a.02'), Synset('alike.a.01'), Synset('comparable.s.02')] Try another word: 123word = 'disbelieve'syn = wn.synsets(word)print (syn) Result: 1[Synset('disbelieve.v.01')] For some words the result will be empty: 123word='could'syn = wn.synsets(word)print (syn) Result: 1[] So if you want to process a list of words, you’d better check for the empty case. Get SentimentUse the word ‘disbelieve’ as the example. We just get the synsets of it, it’s [Synset(‘disbelieve.v.01’)]. We need to use {disbelieve.v.01} as an input for the senti_synset() function. You can use the syn[0] as a default input when processing a list of words. Here is how to access the nltk/wordnet Synset object: 12345#word = 'disbelieve'#syn = wn.synsets(word)s = str(syn[0])[8:-2] print (s) Another way, but you might get a list of lemmas: 1s = syn[0].lemma_names() Just go for sentiment analysis now! 123456789#word = 'disbelieve'#syn = wn.synsets(word)#print (syn)#s = str(syn[0])[8:-2] #print (s)res = swn.senti_synset(s)print (res) Result: 1&lt;disbelieve.v.01: PosScore=0.0 NegScore=0.5&gt; We can see the PosScore and NegScore for a word now. If you just want the scores for comparing. 1234pos = res.pos_score()neg = res.neg_score()print (pos)print (neg) Result: 12('pos_score: ', 0.0)('neg_score: ', 0.5) Then you can save them in a words set like this: 123456if res.pos_score() &gt; 0 and res.pos_score() &gt; res.neg_score(): pos_words.append(word)elif res.neg_score() &gt; 0 and res.pos_score() &lt; res.neg_score(): neg_words.append(word)else: non_words.append(word) Positive and Negative Words in News TitlesHere are some top words I collected from new titles. It is recommended to do normalization works like Stemming &amp; Lemmatization before you start your sentiment analysis. It may help improve the accuracy. By the way, this is just a simple way for sentiment analysis. You may not get the accuracy as you expected. For further method, you can try using CNN (Convolutionary Neural Networks) for Sentiment Analysis. I may write another blog about it later. ReferenceSentiWordNet Interface]]></content>
       <tags>
-        <tag>Python, NLP</tag>
+        <tag>Python</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -13,7 +14,8 @@
     <url>%2F2017%2F10%2F01%2FES7-Async-Await%2F</url>
     <content type="text"><![CDATA[I will write something about it later.]]></content>
       <tags>
-        <tag>JavaScript, Node.js</tag>
+        <tag>JavaScript</tag>
+        <tag>Node.js</tag>
       </tags>
   </entry>
   <entry>
