@@ -49,7 +49,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python, NLP," />
 
 
 
@@ -67,16 +67,22 @@
 
 
 
-<meta name="description" content="Look for a front-end developer job.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yunzhe.me">
-<meta property="og:url" content="http://yunzhexu.github.io/index.html">
+<meta name="description" content="Package NeededIf you don’t have installed the nltk in your python environment, just do this: 1pip install nltk Use 2 packages for the work.12from nltk.corpus import sentiwordnet as swnfrom nltk.corpu">
+<meta name="keywords" content="Python, NLP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sentiment Analysis by Python SentiWordNet">
+<meta property="og:url" content="http://yunzhexu.github.io/2017/10/13/Sentiment-Analysis/index.html">
 <meta property="og:site_name" content="yunzhe.me">
-<meta property="og:description" content="Look for a front-end developer job.">
+<meta property="og:description" content="Package NeededIf you don’t have installed the nltk in your python environment, just do this: 1pip install nltk Use 2 packages for the work.12from nltk.corpus import sentiwordnet as swnfrom nltk.corpu">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://paxcom.net/wp-content/uploads/2016/09/Words.png">
+<meta property="og:image" content="https://imgur.com/LqlfvhA.png">
+<meta property="og:image" content="https://i.imgur.com/ceFER33.png">
+<meta property="og:updated_time" content="2017-11-14T04:00:01.143Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yunzhe.me">
-<meta name="twitter:description" content="Look for a front-end developer job.">
+<meta name="twitter:title" content="Sentiment Analysis by Python SentiWordNet">
+<meta name="twitter:description" content="Package NeededIf you don’t have installed the nltk in your python environment, just do this: 1pip install nltk Use 2 packages for the work.12from nltk.corpus import sentiwordnet as swnfrom nltk.corpu">
+<meta name="twitter:image" content="http://paxcom.net/wp-content/uploads/2016/09/Words.png">
 
 
 
@@ -106,13 +112,13 @@
 
 
 
-  <link rel="canonical" href="http://yunzhexu.github.io/"/>
+  <link rel="canonical" href="http://yunzhexu.github.io/2017/10/13/Sentiment-Analysis/"/>
 
 
 
 
 
-  <title>yunzhe.me</title>
+  <title>Sentiment Analysis by Python SentiWordNet | yunzhe.me</title>
   
 
 
@@ -140,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,9 +273,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -300,9 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/13/Sentiment-Analysis/" itemprop="url">Sentiment Analysis by Python SentiWordNet</a></h1>
+          <h1 class="post-title" itemprop="name headline">Sentiment Analysis by Python SentiWordNet</h1>
         
 
         <div class="post-meta">
@@ -356,6 +359,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -374,8 +382,7 @@
       
 
       
-        
-          <p><img src="http://paxcom.net/wp-content/uploads/2016/09/Words.png" alt="sentiment analysis"><br><br></p>
+        <p><img src="http://paxcom.net/wp-content/uploads/2016/09/Words.png" alt="sentiment analysis"><br><br></p>
 <h1 id="Package-Needed"><a href="#Package-Needed" class="headerlink" title="Package Needed"></a>Package Needed</h1><p>If you don’t have installed the nltk in your python environment, just do this:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install nltk</div></pre></td></tr></table></figure>
 <p>Use 2 packages for the work.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> nltk.corpus <span class="keyword">import</span> sentiwordnet <span class="keyword">as</span> swn</div><div class="line"><span class="keyword">from</span> nltk.corpus <span class="keyword">import</span> wordnet <span class="keyword">as</span> wn</div></pre></td></tr></table></figure></p>
@@ -383,14 +390,41 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">word = <span class="string">'like'</span></div><div class="line">syn = wn.synsets(word)</div><div class="line"><span class="keyword">print</span> (syn)</div></pre></td></tr></table></figure>
 <p>The result wil be:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Synset(<span class="string">'like.n.01'</span>), Synset(<span class="string">'like.n.02'</span>), Synset(<span class="string">'wish.v.02'</span>), Synset(<span class="string">'like.v.02'</span>), Synset(<span class="string">'like.v.03'</span>), Synset(<span class="string">'like.v.04'</span>), Synset(<span class="string">'like.v.05'</span>), Synset(<span class="string">'like.a.01'</span>), Synset(<span class="string">'like.a.02'</span>), Synset(<span class="string">'alike.a.01'</span>), Synset(<span class="string">'comparable.s.02'</span>)]</div></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/13/Sentiment-Analysis/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<p>Try another word:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">word = <span class="string">'disbelieve'</span></div><div class="line">syn = wn.synsets(word)</div><div class="line"><span class="keyword">print</span> (syn)</div></pre></td></tr></table></figure>
+<p>Result:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Synset(<span class="string">'disbelieve.v.01'</span>)]</div></pre></td></tr></table></figure>
+<p>For some words the result will be empty:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">word=<span class="string">'could'</span></div><div class="line">syn = wn.synsets(word)</div><div class="line"><span class="keyword">print</span> (syn)</div></pre></td></tr></table></figure>
+<p>Result:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[]</div></pre></td></tr></table></figure>
+<p>So if you want to process a list of words, you’d better check for the empty case.</p>
+<h1 id="Get-Sentiment"><a href="#Get-Sentiment" class="headerlink" title="Get Sentiment"></a>Get Sentiment</h1><p>Use the word ‘disbelieve’ as the example.</p>
+<p>We just get the synsets of it, it’s [Synset(‘disbelieve.v.01’)]. We need to use {disbelieve.v.01} as an input for the senti_synset() function.</p>
+<p>You can use the syn[0] as a default input when processing a list of words.</p>
+<p>Here is how to access the nltk/wordnet Synset object:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#word = 'disbelieve'</span></div><div class="line"><span class="comment">#syn = wn.synsets(word)</span></div><div class="line"></div><div class="line">s = str(syn[<span class="number">0</span>])[<span class="number">8</span>:<span class="number">-2</span>] </div><div class="line"><span class="keyword">print</span> (s)</div></pre></td></tr></table></figure>
+<p>Another way, but you might get a list of lemmas:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = syn[<span class="number">0</span>].lemma_names()</div></pre></td></tr></table></figure>
+<p>Just go for sentiment analysis now!</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#word = 'disbelieve'</span></div><div class="line"><span class="comment">#syn = wn.synsets(word)</span></div><div class="line"><span class="comment">#print (syn)</span></div><div class="line"></div><div class="line"><span class="comment">#s = str(syn[0])[8:-2] </span></div><div class="line"><span class="comment">#print (s)</span></div><div class="line"></div><div class="line">res = swn.senti_synset(s)</div><div class="line"><span class="keyword">print</span> (res)</div></pre></td></tr></table></figure>
+<p>Result:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;disbelieve.v<span class="number">.01</span>: PosScore=<span class="number">0.0</span> NegScore=<span class="number">0.5</span>&gt;</div></pre></td></tr></table></figure>
+<p>We can see the PosScore and NegScore for a word now.</p>
+<p>If you just want the scores for comparing.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">pos = res.pos_score()</div><div class="line">neg = res.neg_score()</div><div class="line"><span class="keyword">print</span> (pos)</div><div class="line"><span class="keyword">print</span> (neg)</div></pre></td></tr></table></figure>
+<p>Result:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(<span class="string">'pos_score: '</span>, <span class="number">0.0</span>)</div><div class="line">(<span class="string">'neg_score: '</span>, <span class="number">0.5</span>)</div></pre></td></tr></table></figure>
+<p>Then you can save them in a words set like this:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> res.pos_score() &gt; <span class="number">0</span> <span class="keyword">and</span> res.pos_score() &gt; res.neg_score():</div><div class="line">    pos_words.append(word)</div><div class="line"><span class="keyword">elif</span> res.neg_score() &gt; <span class="number">0</span> <span class="keyword">and</span> res.pos_score() &lt; res.neg_score():</div><div class="line">    neg_words.append(word)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    non_words.append(word)</div></pre></td></tr></table></figure>
+<h1 id="Positive-and-Negative-Words-in-News-Titles"><a href="#Positive-and-Negative-Words-in-News-Titles" class="headerlink" title="Positive and Negative Words in News Titles"></a>Positive and Negative Words in News Titles</h1><p>Here are some top words I collected from new titles.</p>
+<p><img src="https://imgur.com/LqlfvhA.png" alt=""><br><img src="https://i.imgur.com/ceFER33.png" alt=""></p>
+<p>It is recommended to do normalization works like Stemming &amp; Lemmatization before you start your sentiment analysis. It may help improve the accuracy.</p>
+<p>By the way, this is just a simple way for sentiment analysis. You may not get the accuracy as you expected.</p>
+<p>For further method, you can try using CNN  (Convolutionary Neural Networks) for Sentiment Analysis. I may write another blog about it later. </p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="http://www.nltk.org/howto/sentiwordnet.html" target="_blank" rel="external">SentiWordNet Interface</a></p>
+
       
     </div>
     
@@ -405,313 +439,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunzhexu.github.io/2017/10/01/ES7-Async-Await/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yunzhe Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/baracktocat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yunzhe.me">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/01/ES7-Async-Await/" itemprop="url">ES7 Async/Await</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-01T20:14:35-04:00">
-                2017-10-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Python-NLP/" rel="tag"># Python, NLP</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/10/01/ES7-Async-Await/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/01/ES7-Async-Await/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/10/01/ES7-Async-Await/" class="leancloud_visitors" data-flag-title="ES7 Async/Await">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="https://coligo.io/javascript-async-await/cover-850x416.jpg" alt="async/await"><br><br><br>I will write something about it later.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunzhexu.github.io/2017/09/25/About-Me/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yunzhe Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/baracktocat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yunzhe.me">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/25/About-Me/" itemprop="url">About Me</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T01:57:56-04:00">
-                2017-09-25
-              </time>
+              <a href="/2017/10/01/ES7-Async-Await/" rel="next" title="ES7 Async/Await">
+                <i class="fa fa-chevron-left"></i> ES7 Async/Await
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/25/About-Me/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/25/About-Me/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/09/25/About-Me/" class="leancloud_visitors" data-flag-title="About Me">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <style>
-.polaroid {
-  width: 150px;
-  height: 150px;
-  border-radius:8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
-
-<p><br></p>
-<p><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&amp;fit=crop&amp;w=1352&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3Ds" alt=""></p>
-<font size="10">Hi,</font> I’m Yunzhe Xu, a graduate student studying at Stevens Institute of Technology, in the greater New York area.<br><br>I like programing, learning new technology is my passion. I want to be a web developing superhero and create awesome web applications in the future!<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/25/About-Me/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -721,10 +478,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -732,6 +490,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -752,8 +521,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -830,6 +608,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Package-Needed"><span class="nav-number">1.</span> <span class="nav-text">Package Needed</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Get-Synsets-of-A-Word"><span class="nav-number">2.</span> <span class="nav-text">Get Synsets of A Word</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Get-Sentiment"><span class="nav-number">3.</span> <span class="nav-text">Get Sentiment</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Positive-and-Negative-Words-in-News-Titles"><span class="nav-number">4.</span> <span class="nav-text">Positive and Negative Words in News Titles</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -988,6 +782,18 @@
       <script id="dsq-count-scr" src="https://yunzhe.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yunzhexu.github.io/2017/10/13/Sentiment-Analysis/';
+          this.page.identifier = '2017/10/13/Sentiment-Analysis/';
+          this.page.title = 'Sentiment Analysis by Python SentiWordNet';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://yunzhe.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   

@@ -49,7 +49,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript, Node.js," />
 
 
 
@@ -67,16 +67,20 @@
 
 
 
-<meta name="description" content="Look for a front-end developer job.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yunzhe.me">
-<meta property="og:url" content="http://yunzhexu.github.io/index.html">
+<meta name="description" content="I will write something about it later.">
+<meta name="keywords" content="JavaScript, Node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES7 Async&#x2F;Await">
+<meta property="og:url" content="http://yunzhexu.github.io/2017/10/01/ES7-Async-Await/index.html">
 <meta property="og:site_name" content="yunzhe.me">
-<meta property="og:description" content="Look for a front-end developer job.">
+<meta property="og:description" content="I will write something about it later.">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://coligo.io/javascript-async-await/cover-850x416.jpg">
+<meta property="og:updated_time" content="2017-11-14T03:56:30.278Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yunzhe.me">
-<meta name="twitter:description" content="Look for a front-end developer job.">
+<meta name="twitter:title" content="ES7 Async&#x2F;Await">
+<meta name="twitter:description" content="I will write something about it later.">
+<meta name="twitter:image" content="https://coligo.io/javascript-async-await/cover-850x416.jpg">
 
 
 
@@ -106,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yunzhexu.github.io/"/>
+  <link rel="canonical" href="http://yunzhexu.github.io/2017/10/01/ES7-Async-Await/"/>
 
 
 
 
 
-  <title>yunzhe.me</title>
+  <title>ES7 Async/Await | yunzhe.me</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,162 +271,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunzhexu.github.io/2017/10/13/Sentiment-Analysis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yunzhe Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/baracktocat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yunzhe.me">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/13/Sentiment-Analysis/" itemprop="url">Sentiment Analysis by Python SentiWordNet</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-13T19:57:22-04:00">
-                2017-10-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/10/13/Sentiment-Analysis/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/13/Sentiment-Analysis/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/10/13/Sentiment-Analysis/" class="leancloud_visitors" data-flag-title="Sentiment Analysis by Python SentiWordNet">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="http://paxcom.net/wp-content/uploads/2016/09/Words.png" alt="sentiment analysis"><br><br></p>
-<h1 id="Package-Needed"><a href="#Package-Needed" class="headerlink" title="Package Needed"></a>Package Needed</h1><p>If you don’t have installed the nltk in your python environment, just do this:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip install nltk</div></pre></td></tr></table></figure>
-<p>Use 2 packages for the work.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> nltk.corpus <span class="keyword">import</span> sentiwordnet <span class="keyword">as</span> swn</div><div class="line"><span class="keyword">from</span> nltk.corpus <span class="keyword">import</span> wordnet <span class="keyword">as</span> wn</div></pre></td></tr></table></figure></p>
-<h1 id="Get-Synsets-of-A-Word"><a href="#Get-Synsets-of-A-Word" class="headerlink" title="Get Synsets of A Word"></a>Get Synsets of A Word</h1><p>You can get a list of the synsets for any given word by doing this:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">word = <span class="string">'like'</span></div><div class="line">syn = wn.synsets(word)</div><div class="line"><span class="keyword">print</span> (syn)</div></pre></td></tr></table></figure>
-<p>The result wil be:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[Synset(<span class="string">'like.n.01'</span>), Synset(<span class="string">'like.n.02'</span>), Synset(<span class="string">'wish.v.02'</span>), Synset(<span class="string">'like.v.02'</span>), Synset(<span class="string">'like.v.03'</span>), Synset(<span class="string">'like.v.04'</span>), Synset(<span class="string">'like.v.05'</span>), Synset(<span class="string">'like.a.01'</span>), Synset(<span class="string">'like.a.02'</span>), Synset(<span class="string">'alike.a.01'</span>), Synset(<span class="string">'comparable.s.02'</span>)]</div></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/13/Sentiment-Analysis/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -453,9 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/01/ES7-Async-Await/" itemprop="url">ES7 Async/Await</a></h1>
+          <h1 class="post-title" itemprop="name headline">ES7 Async/Await</h1>
         
 
         <div class="post-meta">
@@ -509,147 +357,10 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="https://coligo.io/javascript-async-await/cover-850x416.jpg" alt="async/await"><br><br><br>I will write something about it later.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunzhexu.github.io/2017/09/25/About-Me/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yunzhe Xu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/baracktocat.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yunzhe.me">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/25/About-Me/" itemprop="url">About Me</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T01:57:56-04:00">
-                2017-09-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/25/About-Me/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/25/About-Me/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2017/09/25/About-Me/" class="leancloud_visitors" data-flag-title="About Me">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -669,27 +380,8 @@
       
 
       
-        
-          <style>
-.polaroid {
-  width: 150px;
-  height: 150px;
-  border-radius:8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
+        <p><img src="https://coligo.io/javascript-async-await/cover-850x416.jpg" alt="async/await"><br><br><br>I will write something about it later.</p>
 
-<p><br></p>
-<p><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&amp;fit=crop&amp;w=1352&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3Ds" alt=""></p>
-<font size="10">Hi,</font> I’m Yunzhe Xu, a graduate student studying at Stevens Institute of Technology, in the greater New York area.<br><br>I like programing, learning new technology is my passion. I want to be a web developing superhero and create awesome web applications in the future!<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/25/About-Me/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -704,14 +396,40 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript-Node-js/" rel="tag"># JavaScript, Node.js</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/25/About-Me/" rel="next" title="About Me">
+                <i class="fa fa-chevron-left"></i> About Me
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/13/Sentiment-Analysis/" rel="prev" title="Sentiment Analysis by Python SentiWordNet">
+                Sentiment Analysis by Python SentiWordNet <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -721,10 +439,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -732,6 +451,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -988,6 +718,18 @@
       <script id="dsq-count-scr" src="https://yunzhe.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yunzhexu.github.io/2017/10/01/ES7-Async-Await/';
+          this.page.identifier = '2017/10/01/ES7-Async-Await/';
+          this.page.title = 'ES7 Async/Await';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://yunzhe.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
